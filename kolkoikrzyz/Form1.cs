@@ -40,7 +40,7 @@ namespace kolkoikrzyz
             }
             if(ileNaPlanszy == 9)
             {
-                // koniec (wyskakuj¹ce okno)
+                remis();
             }
             czyWygrany();
         }
@@ -97,6 +97,24 @@ namespace kolkoikrzyz
             m.Show();
 
         }
+        private void remis()
+        {
+            // ten kod ukrywa wszystko
+            foreach (Control c in this.Controls)
+            {
+                c.Visible = false;
+            }
+            kto1.Text = "Remis";
+            kto1.Visible = true;
+            button10.Visible = true;
 
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Environment.Exit(0);
+        }
     }
 }

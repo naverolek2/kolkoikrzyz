@@ -16,5 +16,14 @@ namespace kolkoikrzyz
         {
             InitializeComponent();
         }
+
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            Application.Restart();
+            Environment.Exit(0);
+        }
     }
 }

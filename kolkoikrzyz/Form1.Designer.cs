@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.kto1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -187,11 +188,23 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "label2";
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(147, 217);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(115, 23);
+            this.button10.TabIndex = 4;
+            this.button10.Text = "Spróbuj ponownie!";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Visible = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(228, 245);
+            this.ClientSize = new System.Drawing.Size(274, 245);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.kto1);
             this.Controls.Add(this.label1);
@@ -220,5 +233,6 @@
         private Label label1;
         private Label kto1;
         private Label label2;
+        private Button button10;
     }
 }
