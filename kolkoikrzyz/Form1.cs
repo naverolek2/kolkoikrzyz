@@ -49,45 +49,41 @@ namespace kolkoikrzyz
             //
             if(button1.Text == button2.Text && button2.Text == button3.Text && button1.Text != "")
             {
-                label2.Text = "essa";
+                koniec();
             }
             else if (button4.Text == button5.Text && button5.Text == button6.Text && button4.Text != "")
             {
-                label2.Text = "essa";
+                koniec();
             }
             else if (button7.Text == button8.Text && button8.Text == button9.Text && button7.Text != "")
             {
-                label2.Text = "essa";
+                koniec();
             }
             //
             else if (button1.Text == button4.Text && button4.Text == button7.Text && button1.Text != "")
             {
-                label2.Text = "essa";
+                koniec();
             }
             else if (button2.Text == button5.Text && button5.Text == button8.Text && button2.Text != "")
             {
-                label2.Text = "essa";
+                koniec();
             }
             else if (button3.Text == button6.Text && button6.Text == button9.Text && button3.Text != "")
             {
-                label2.Text = "essa";
+                koniec();
             }
             //
             else if(button1.Text == button5.Text && button5.Text == button9.Text && button1.Text != "")
             {
-                label2.Text = "essa";
-                
+                koniec();
+
             }
             else if(button3.Text == button5.Text && button5.Text == button7.Text && button3.Text != "")
             {
-                label2.Text = "essa";
-                
-            }
-            if(label2.Text == "essa")
-            {
                 koniec();
+
             }
-            
+           
             
         }
         private void koniec()
@@ -104,6 +100,7 @@ namespace kolkoikrzyz
             {
                 c.Visible = false;
             }
+            //
             kto1.Text = "Remis";
             kto1.Visible = true;
             button10.Visible = true;
